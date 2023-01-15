@@ -1,0 +1,22 @@
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 80vh;
+}
+
+span._404 {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	font-size: 230px;
+}
+
+.oups {
+	font-size: 40px;
+}
+
+section, a {
+	color: var(--primary-color);
+	font-size: 30px;
+}
