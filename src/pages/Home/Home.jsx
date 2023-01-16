@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import React from 'react';
 import Data from '../../datas/data.json';
 import './Home.css';
 

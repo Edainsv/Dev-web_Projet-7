@@ -1,6 +1,6 @@
 .banner {
 	width: 90%;
-	height: 200px;
+	height: 180px;
 	margin: auto;
 	margin-top: 1.5rem;
 	border-radius: 25px;
@@ -31,10 +31,10 @@
 
 @media screen and (max-width: 768px) {
 	.banner {
-		height: 160px;
+		height: 100px;
 	}
 
 	.banner .background {
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 }
