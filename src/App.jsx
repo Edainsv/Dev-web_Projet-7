@@ -16,6 +16,7 @@ function App() {
 
 				<Route path="*" element={<Page_404 />} />
 			</Routes>
+
 		</div>		
 	);
 }

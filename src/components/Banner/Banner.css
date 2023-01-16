@@ -1,6 +1,7 @@
 .banner {
-	width: 100%;
+	width: 90%;
 	height: 200px;
+	margin: auto;
 	margin-top: 1.5rem;
 	border-radius: 25px;
 	overflow: hidden;
@@ -26,4 +27,14 @@
 	width: 100%;
 	top: 0;
 	left: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.banner {
+		height: 160px;
+	}
+
+	.banner .background {
+		font-size: 1rem;
+	}
 }

@@ -13,10 +13,14 @@ body {
 	font-weight: 500;
 }
 
+main {
+	margin: auto;
+	width: 90%;
+}
+
 .App > div {
 	margin: auto;
 	max-width: 1920px;
-	padding: 1rem 3%;
 }
 
 :root {

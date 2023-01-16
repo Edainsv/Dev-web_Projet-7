@@ -2,6 +2,12 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+img {
+	width: 100%;
 }
 
 ul {
@@ -11,14 +17,24 @@ ul {
 
 ul > li {
 	margin: 1.8rem;
-	font-size: 1.4rem;
 }
 
 ul > li a {
 	color: var(--primary-color);
 	text-decoration: none;
+	font-size: 1.4rem;
 }
 
 ul > li a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+	header > div:first-child {
+		width: 30%;
+	}
+
+	ul > li a {
+		font-size: 1rem;
+	}
 }
