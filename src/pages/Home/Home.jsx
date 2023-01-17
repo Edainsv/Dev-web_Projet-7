@@ -18,7 +18,6 @@ export default function Home() {
 				<div id="hebergements">
 					{ Data.map((card) => (
 						<Link
-							className=""
 							key={`${card.id}`}
 							to={`/location/${card.id}`}
 						>

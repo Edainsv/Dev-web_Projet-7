@@ -1,0 +1,27 @@
+.dropdown {
+	margin: 1rem 0;
+}
+
+.dropdown .entete {
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	color: #fff;
+	font-size: .9rem;
+	padding: .3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.dropdown .entete img {
+	width: 70%;
+	transform: rotate(180deg);
+}
+
+.dropdown .content {
+	background-color: #f6f6f6;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding: .3rem;
+}
