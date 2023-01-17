@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
+import React from 'react';
 import Data from '../../datas/data.json';
 import './Home.css';
+import banner_img from '../../img/banner.svg';
 
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
@@ -10,7 +12,7 @@ import Card from '../../components/Card/Card';
 export default function Home() {
 	return (
 		<div>
-			<Banner />
+			<Banner img={banner_img} />
 
 			<main>
 				<div id="hebergements">
