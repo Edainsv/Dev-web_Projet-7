@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 function Header() {
 	return (
 		<header>
-			<div>
+			<Link to="/">
 				<img src={logo} alt="Kasa" />
-			</div>
+			</Link>
 
 			<div>
 				<ul>
