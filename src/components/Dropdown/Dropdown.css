@@ -36,3 +36,14 @@
 .hide-class {
 	display: none;
 }
+
+@media screen and (max-width: 768px) {
+	.dropdown .entete {
+		font-size: .7rem;
+	}
+
+	.dropdown .content {
+		font-size: 1rem;
+		padding: .8rem .5rem;
+	}
+}
