@@ -59,6 +59,10 @@
 	border-radius: 50%;
 }
 
+.rating img {
+	width: 2.5rem;
+}
+
 @media screen and (max-width: 768px) {
 	.header_location {
 		flex-direction: column;
