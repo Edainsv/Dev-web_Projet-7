@@ -10,22 +10,22 @@ img {
 	width: 100%;
 }
 
-ul {
+.header ul {
 	display: flex;
 	list-style: none;
 }
 
-ul > li {
+.header ul > li {
 	margin: 1.8rem;
 }
 
-ul > li a {
+.header ul > li a {
 	color: var(--primary-color);
 	text-decoration: none;
 	font-size: 1.4rem;
 }
 
-ul > li a:hover {
+.header ul > li a:hover {
 	text-decoration: underline;
 }
 
@@ -34,11 +34,11 @@ ul > li a:hover {
 		width: 35%;
 	}
 
-	ul > li {
+	.header ul > li {
 		margin: .8rem;
 	}
 
-	ul > li a {
+	.header ul > li a {
 		font-size: .9rem;
 	}
 }

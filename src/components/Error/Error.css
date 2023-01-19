@@ -1,4 +1,4 @@
-section {
+.error_section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -16,7 +16,7 @@ span._404 {
 	font-size: 40px;
 }
 
-section, a {
+.error_section, a {
 	color: var(--primary-color);
 	font-size: 30px;
 }

@@ -12,14 +12,14 @@ import Card from '../../components/Card/Card';
 export default function Home() {
 	return (
 		<div>
-			<Banner img={banner_img} />
+			<Banner img={banner_img} content="Chez vous, partout et ailleurs" />
 
 			<main>
 				<div id="hebergements">
 					{ Data.map((card) => (
 						<Link
 							key={`${card.id}`}
-							to={`/location/${card.id}`}
+							to={`/logement/${card.id}`}
 						>
 							<Card
 								key={`${card.id}`}

@@ -9,7 +9,7 @@ function Header() {
 				<img src={logo} alt="Kasa" />
 			</Link>
 
-			<div>
+			<div className="header">
 				<ul>
 					<li><Link to="/">Accueil</Link></li>
 					<li><Link to="/about">A propos</Link></li>

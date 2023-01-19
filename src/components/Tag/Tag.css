@@ -1,0 +1,17 @@
+.tag {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag li{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	padding: .250rem;
+	list-style: none;
+	width: 140px;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	color: #fff;
+}

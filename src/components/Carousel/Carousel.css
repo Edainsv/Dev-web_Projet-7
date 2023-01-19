@@ -1,0 +1,50 @@
+.carousel {
+	position: relative;
+	background-color: black;
+	width: 100%;
+	height: 310px;
+	border-radius: 15px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.carousel .buttons {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.previous, .next {
+	position: absolute;
+	background: none;
+	border: none;
+	cursor: pointer;
+	height: 60px;
+	width: 60px;
+}
+
+.previous {
+	left: 15px;
+}
+
+.next {
+	right: 15px;
+}
+
+.info {
+	position: absolute;
+	color: white;
+	bottom: 5%;
+	font-size: 1.7rem;
+}
+
+.previous img {
+	transform: rotate(90deg);
+}
+.next img {
+	transform: rotate(-90deg);
+}
+

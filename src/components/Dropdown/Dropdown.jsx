@@ -1,36 +1,27 @@
 import './Dropdown.css';
+import React, { useState } from 'react';
 
-import logo_arrow_dropdown from '../../img/logo_arrow_dropdown.png';
+import logo_arrow_dropdown from '../../img/logo_arrow.png';
 
-function Dropdown(props, isOpen) {
-	isOpen = true;
-
-	function dropdownAction(e) {
-		if (isOpen == true) {
-			isOpen = false;
-		} else {
-			isOpen = true
-		}
-
-		console.log(e.target);
-	}
+function Dropdown(props) {
+	const [show, setShow] = useState(true);
 
 	return (
 		<div className="dropdown">
-			<div				
+			<div
 				className="entete"
-				onClick={(e) => dropdownAction(e)}
+				onClick={() => setShow(!show)}
 			>
 				<div>
 					<h2>{props.title}</h2>
 				</div>
 
-				<div>
+				<div className={show ? '' : 'reverse'}>
 					<img src={logo_arrow_dropdown} alt="Flèche de menu déroulant" />
 				</div>
 			</div>
 
-			<div className="content">
+			<div className={show ? 'content' : 'content hide-class'}>
 				<p>{props.content}</p>
 			</div>
 		</div>

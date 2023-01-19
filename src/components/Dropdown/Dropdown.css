@@ -19,9 +19,20 @@
 	transform: rotate(180deg);
 }
 
+.reverse img {
+	transform: rotate(0) !important;
+}
+
 .dropdown .content {
 	background-color: #f6f6f6;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding: .3rem;
+	padding: .5rem .3rem;
+	color: var(--primary-color);
+	min-height: 100px;
+	font-size: 1.3rem;
+}
+
+.hide-class {
+	display: none;
 }
