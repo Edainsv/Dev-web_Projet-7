@@ -2,7 +2,8 @@
 	position: relative;
 	background-color: black;
 	width: 100%;
-	height: 310px;
+	height: 40vh;
+	max-height: 310px;
 	border-radius: 15px;
 	border: 1px solid black;
 	margin-bottom: 20px;
@@ -22,8 +23,8 @@
 	background: none;
 	border: none;
 	cursor: pointer;
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 }
 
 .previous {
@@ -48,3 +49,18 @@
 	transform: rotate(-90deg);
 }
 
+
+@media screen and (max-width: 768px) {
+	.carousel {
+		max-height: 200px;
+	}
+
+	.previous, .next {
+		height: 30px;
+		width: 30px;
+	}
+
+	.info {
+		font-size: 1rem;
+	}
+}
