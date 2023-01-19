@@ -13,6 +13,10 @@
 	font-weight: 300;
 }
 
+.header_location h3 {
+	font-weight: 300;
+}
+
 .main_content_location li {
 	list-style: none;
 }
@@ -53,4 +57,42 @@
 	width: 70px;
 	height: 70px;
 	border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	.header_location {
+		flex-direction: column;
+	}
+
+	.header_location h2 {
+		font-size: 2rem;
+	}
+
+	.header_location h3 {
+		font-size: 1.2rem;
+	}
+
+	.main_content_location {
+		flex-direction: column;
+	}
+	.main_content_location .dropdown {
+		width: 100%;
+	}
+
+	.header_location_right {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.info_profil img {
+		width: 50px;
+		height: 50px;
+	}
+	.info_profil span {
+		font-size: 1rem;
+	}
+
+	.rating img {
+		width: 1.4rem;
+	}
 }
