@@ -14,7 +14,7 @@ export default function Logements() {
 	if (dataLogement) {
 		return (
 			<main>
-				<Carousel />
+				<Carousel pictures={dataLogement.pictures} />
 
 				<div className="header_location">
 					<div>

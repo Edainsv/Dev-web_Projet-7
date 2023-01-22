@@ -4,13 +4,13 @@ import React, { useState } from 'react';
 import logo_arrow_dropdown from '../../img/logo_arrow.png';
 
 function Dropdown(props) {
-	const [show, setShow] = useState(true);
+	const [show, changeClass] = useState(true);
 
 	return (
 		<div className="dropdown">
 			<div
 				className="entete"
-				onClick={() => setShow(!show)}
+				onClick={() => changeClass(!show)}
 			>
 				<div>
 					<h2>{props.title}</h2>
