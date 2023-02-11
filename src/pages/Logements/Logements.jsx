@@ -1,15 +1,18 @@
-import { useParams } from "react-router-dom";
 import Data from '../../datas/data.json';
+import React from 'react';
+import { useParams } from "react-router-dom";
+import './Logements.css';
+
 import Carousel from '../../components/Carousel/Carousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import Rating from '../../components/Rating/Rating';
 import Tag from '../../components/Tag/Tag';
-import './Logements.css';
 
 
 export default function Logements() {
 	const { id } = useParams();
 	const dataLogement = Data.find((product) => product.id === id);
+	console.log(id);
 
 	if (dataLogement) {
 		return (
@@ -31,7 +34,7 @@ export default function Logements() {
 					<div className="header_location_right">
 						<div className="info_profil">
 							<span>{dataLogement.host.name}</span>
-							<img src={dataLogement.host.picture} alt="Photo de profil" />
+							<img src={dataLogement.host.picture} alt="Avatar de l'utilisateur" />
 						</div>
 
 						<div className="rating">
@@ -57,6 +60,6 @@ export default function Logements() {
 			</main>
 		);
 	} else {
-		window.location = '/'
+		window.location = '/error';
 	}
 }

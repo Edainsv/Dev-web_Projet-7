@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
-import React from 'react';
 import Data from '../../datas/data.json';
+import React from 'react';
+import { Link } from 'react-router-dom'
 import './Home.css';
+
 import banner_img from '../../img/banner.svg';
 
 import Banner from '../../components/Banner/Banner';
-import Footer from '../../components/Footer/Footer';
 import Card from '../../components/Card/Card';
 
 export default function Home() {
@@ -29,8 +29,7 @@ export default function Home() {
 					)) }
 				</div>
 			</main>
-
-			<Footer />
 		</div>
 	);
 }
+
